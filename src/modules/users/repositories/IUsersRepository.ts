@@ -4,6 +4,9 @@ interface ICreateUserDTO {
   name: string;
   email: string;
 }
+interface IGetByIdDto {
+  id: string | string[];
+}
 
 interface IUsersRepository {
   create({ name, email }: ICreateUserDTO): User;
